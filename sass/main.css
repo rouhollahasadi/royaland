@@ -1,0 +1,94 @@
+/*abstracts*/
+/*base*/
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /*font-size: 62.5%;/*1rem=10px  =>  1rem=10px <==  site:http://pxtoem.com*/
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  font-size: 100%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../font/eot/iranyekanwebthin.eot");
+  src: url("../font/eot/iranyekanwebthin.eot?#iefix") format("embedded-opentype"), url("../font/woff/iranyekanwebthin.woff") format("woff"), url("../font/ttf/iranyekanwebthin.ttf") format("truetype");
+}
+
+body {
+  font-family: iranyekan,tahoma;
+  direction: rtl;
+  text-align: right !important;
+  line-height: 1.6;
+}
+
+nav ul li a {
+  color: #616161;
+}
+
+/*layout*/
+/*components*/
+/*pages*/
+body {
+  max-width: 1920px;
+  background: #fff;
+  color: #080707;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.header__top-bar {
+  height: 48px;
+  background: #414C57;
+}
+
+nav ul li a {
+  font-weight: 700;
+  color: #080707;
+}
+
+.mr-right {
+  margin-right: 20px;
+}
+
+.search-box {
+  position: relative;
+  max-width: 273px;
+  margin-left: 13px;
+}
+
+.search-box__input {
+  width: 100%;
+  border-radius: .25rem;
+}
+
+.search-box i.fa-search {
+  position: absolute;
+  z-index: 11;
+  left: 24px;
+  top: 11px;
+}
+
+.btn-login {
+  width: 93px;
+  background: #424c56;
+}
+
+.navbar-brand .logo {
+  max-width: 124px;
+  height: auto;
+}
+/*# sourceMappingURL=main.css.map */

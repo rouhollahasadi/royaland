@@ -1,0 +1,134 @@
+$screen-sm-min:768px;
+$screen-md-min:992px;
+$screen-lg-min:1200px;
+$container-sm-width:750px;
+$container-md-width:970px;
+$container-lg-width:1170px;
+$float-right:right;
+$c-margin-right:auto;
+$c-margin-left:auto;
+$c-padding-right:15px;
+$c-padding-left:15px;
+$r-margin-left:-15px;
+$r-margin-right:-15px;
+
+* {
+  box-sizing: border-box;
+}
+.container-fluid{
+  margin-left: $c-margin-left;
+  margin-right: $c-margin-right;
+  padding-left: $c-padding-left;
+  padding-right: $c-padding-right;
+}
+.container{
+  margin-left: $c-margin-left;
+  margin-right: $c-margin-right;
+  padding-left: $c-padding-left;
+  padding-right: $c-padding-right;
+}
+.row{
+  margin-left: $r-margin-left;
+  margin-right: $r-margin-right;
+}
+
+.col-xs-1,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,
+.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-10,.col-xs-11,.col-xs-12,
+.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,
+.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12,
+.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,
+.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12,
+.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,
+.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12{
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*media query*/
+@media (min-width:$screen-sm-min){
+  .container{
+    width:$container-sm-width
+  }
+}
+@media (min-width:$screen-md-min){
+  .container{
+    width:$container-md-width
+  }
+}
+@media (min-width:$screen-lg-min){
+  .container{
+    width:$container-lg-width
+  }
+}
+
+/*xs grid class*/
+@for $i from 1 through 12{
+  .col-xs-#{$i}{
+    width:$i*8.33333333%;
+    float: $float-right;
+  }
+}
+/*sm grid class*/
+@media (min-width:$screen-sm-min) {
+  @for $i from 1 through 12 {
+    .col-sm-#{$i} {
+      width: $i*8.33333333%;
+      float: $float-right;
+    }
+    .col-offset-#{$i} {
+      margin-right: $i*8.33333333%;
+    }
+  }
+}
+/*md grid class*/
+@media (min-width:$screen-md-min) {
+  @for $i from 1 through 12 {
+    .col-md-#{$i} {
+      width: $i*8.33333333%;
+      float: $float-right;
+    }
+    .col-offset-#{$i} {
+      margin-right: $i*8.33333333%;
+    }
+  }
+}
+/*lg grid class*/
+@media (min-width:$screen-lg-min) {
+  @for $i from 1 through 12 {
+    .col-lg-#{$i} {
+      width: $i*8.33333333%;
+      float: $float-right;
+    }
+    .col-offset-#{$i} {
+      margin-right: $i*8.33333333%;
+    }
+    .col-lg-push-#{$i} {
+      right: $i*8.33333333%;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

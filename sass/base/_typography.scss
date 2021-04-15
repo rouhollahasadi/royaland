@@ -1,0 +1,18 @@
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: 400;
+	src: url('../font/eot/iranyekanwebthin.eot');
+	src: url('../font/eot/iranyekanwebthin.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../font/woff/iranyekanwebthin.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../font/ttf/iranyekanwebthin.ttf') format('truetype');
+}
+body{
+    font-family: iranyekan,tahoma;
+	direction: rtl;
+    line-height: 1.6;
+	font-size: 13px;
+}
+nav ul li a{
+	color:#616161;
+}

@@ -1,0 +1,12 @@
+*,*::after,*::before{
+    margin:0;
+    padding: 0;
+}
+html{
+    /*font-size: 62.5%;/*1rem=10px  =>  1rem=10px <==  site:http://pxtoem.com*/ 
+    box-sizing: inherit;
+    font-size: 100%;
+}
+body{
+    box-sizing: border-box;
+}
