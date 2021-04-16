@@ -10,4 +10,4 @@ royaland is a creative web design
 
 If you discover a security vulnerability within Royaland , please send an e-mail to rouhollah asadi  via [rouhollahasadi83@gmail.com](mailto:rouhollahasadi83@gmail.com). All security vulnerabilities will be promptly addressed.
 
-All right reserved 
+All right reserved &copy; 2020
